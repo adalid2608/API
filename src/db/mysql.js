@@ -67,8 +67,6 @@ function update(table, data){
     })
 }
 
-
-
 function addData(table, data){
     if(data && data.id == 0){
         return insert(table, data);

@@ -1,4 +1,4 @@
-const TABLE = 'clients';
+const TABLE = 'users';
 
 module.exports = function(dbInject){
     let db = dbInject;

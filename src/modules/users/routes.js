@@ -35,9 +35,9 @@ async function addData (req, res, next){
     try {
         const items = await controller.addData(req.body)
         if(req.body.id == 0){
-            message = 'Cliente Guardado exitosamente'
+            message = 'Usuario Guardado exitosamente'
         }else{
-            message = 'Cliente Actualizado exitosamente'
+            message = 'Usuario Actualizado exitosamente'
 
         }
         response.success(req, res, message, 201)
@@ -49,7 +49,7 @@ async function addData (req, res, next){
 async function deleteData (req, res, next){
     try {
         const items = await controller.deleteData(req.body)
-        response.success(req, res, 'Cliente Eliminado Satisfactoriamente', 200)
+        response.success(req, res, 'Usuario Eliminado Satisfactoriamente', 200)
     } catch (err) {
         next(err)
     }
