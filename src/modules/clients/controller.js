@@ -6,6 +6,21 @@ function allData(){
     return db.allData(TABLE);
 }
 
+function oneData( id ){
+    return db.oneData(TABLE, id);
+}
+
+function addData( body ){
+    return db.addData(TABLE, body);
+}
+
+function deleteData( body ){
+    return db.deleteData(TABLE, body);
+}
+
 module.exports = {
-    allData
+    allData,
+    oneData,
+    addData,
+    deleteData,
 }
